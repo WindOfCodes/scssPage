@@ -1,0 +1,106 @@
+@import "reset";
+@import "media";
+
+$blue:#215398;
+$white:#ffffff;
+$darkGrey:#2D3236;
+$grey:#808080;
+$almostWhite:#F1F6FC;
+$pink:#FF3859;
+$arrowHover:rgba(255, 255, 255, 0.05);
+
+.topBox {
+    background-color: $blue;
+    // text-align: center;
+    color: $white;
+    height: 50vh;
+    header {
+        height: auto;
+        background-color: $white;
+        img {
+            width: 100px;
+            padding: 10px;
+            margin-left: 20%;
+        }
+    }
+}
+.headerText {
+    height: 30%;
+    line-height: 1.5;
+    text-align: center;
+    p {
+        font-size: 18px;
+    }
+}
+.singlebox {
+    background-color: $white;
+    color: $darkGrey;
+    width: 20%;
+    height: 60%;
+    margin: 5px;
+    display: inline-grid;
+    img {
+        width: 42px;
+        padding: 10px;
+        margin-right: 60%;
+        margin: auto;
+    }
+    p {
+        color: $grey;
+        font-size: 15px;
+    }
+}
+
+.arrowL, .arrowR{
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    position: fixed;
+    top: 30%;
+}
+.arrowL {
+    left: 15%;
+}
+.arrowR {
+    right: 15%;
+}
+.arrowL:hover, .arrowR:hover{
+    background-color: $arrowHover;
+}
+.sliderBox {
+    height: 60%;
+    text-align: center;
+    .singlebox {
+        display: inline-grid;
+        background-color: $white;
+        color: $darkGrey;
+        width: 20%;
+        height: 70%;
+    }
+}
+.bottomBox {
+    background-color: $almostWhite;
+    text-align: center;
+    color: $darkGrey;
+    height: 50vh;
+    header {
+        height: auto;
+        background-color: $white;
+    }
+}
+.sqaresBox {
+    height: 70%;
+}
+
+.dot {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: $pink;
+}
